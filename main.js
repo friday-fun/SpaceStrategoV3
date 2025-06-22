@@ -2293,10 +2293,10 @@ function handleBulletMovement() {
             int(bullet.xMouseStart) - bullet.xStart,
             int(bullet.yMouseStart) - bullet.yStart,
         ).normalize();
-
+ 
         let currentBulletSpeed = parseInt(BULLET_SPEED);
         if (myCharacterData && myCharacterData.canSnipe) {
-            currentBulletSpeed *= 2; // Sniper bullets are twice as fast
+            currentBulletSpeed *= 1.5; // Sniper bullets are twice as fast
         }
 
         bullet.xLocal += bulletVector.x * currentBulletSpeed;
